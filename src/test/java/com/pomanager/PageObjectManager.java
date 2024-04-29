@@ -1,11 +1,14 @@
 package com.pomanager;
 
+
 import com.pageObjects.LoginPage;
 import com.pom.CustomerDetailsPage;
 
 import com.pom.SearchCustomerPage;
 
-import nopcommerce.baseClass.BaseClass;
+import nopcommerceDemoBaseClass.BaseClass;
+
+
 
 public class PageObjectManager extends BaseClass{
 	

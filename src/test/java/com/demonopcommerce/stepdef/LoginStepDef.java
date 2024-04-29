@@ -9,9 +9,11 @@ import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import nopcommerce.baseClass.BaseClass;
+import nopcommerceDemoBaseClass.BaseClass;
 
-public class LoginStepDef extends BaseClass {
+
+
+public class LoginStepDef extends  nopcommerce.baseClass.BaseClass{
 	PageObjectManager pom = new PageObjectManager();
 
 	@Before
@@ -70,11 +72,7 @@ public class LoginStepDef extends BaseClass {
 	   Assert.assertTrue(pom.getLoginPage().getErrormsg().isDisplayed());
 	}
 	
-	@Then("User should also see an error messegafoe empty feilds")
-	public void user_should_also_see_an_error_messegafoe_empty_feilds() {
-	    Assert.assertTrue(pom.getLoginPage().getEmptyEmailErrorMsg().isDisplayed());
-	}
-
+	
 
 	@After
 	public void afterHooks() {

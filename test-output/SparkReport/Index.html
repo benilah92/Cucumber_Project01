@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Automation Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Apr 25, 2024 10:34:03 am</span></a>
+<a href="#"><span class="badge badge-primary">Apr 29, 2024 11:18:42 am</span></a>
 </li>
 </ul>
 </div>
@@ -84,7 +84,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@Invalid</a>
+<a class="dropdown-item" href="#">@Invalid</a><a class="dropdown-item" href="#">@Valid</a>
 </ul>
 </li>
 </ul>
@@ -97,7 +97,7 @@
           <div class="test-detail">
             <p class="name">Nopcommerce login feature</p>
             <p class="text-sm">
-              <span>10:34:04 am</span> / <span>00:00:16:858</span>
+              <span>11:18:43 am</span> / <span>00:00:28:015</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -106,9 +106,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">Nopcommerce login feature</h5>
-<span class='badge badge-success'>04.25.2024 10:34:04 am</span>
-<span class='badge badge-danger'>04.25.2024 10:34:21 am</span>
-<span class='badge badge-default'>00:00:16:858</span>
+<span class='badge badge-success'>04.29.2024 11:18:43 am</span>
+<span class='badge badge-danger'>04.29.2024 11:19:11 am</span>
+<span class='badge badge-default'>00:00:28:015</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -120,14 +120,111 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>Unsuccessful Login with invalid credentials</div>
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>Successful Login with the valid credentials</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.demonopcommerce.stepdef.LoginStepDef.user_enters_the(java.lang.String)">
+                <span>Given User enters the "https://admin-demo.nopcommerce.com"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.demonopcommerce.stepdef.LoginStepDef.user_is_on_the_login_page()">
+                <span>Given User is on the login page</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=124.0.6367.91)
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [11d0fa9ff8cf2a37de538c3afc457ff7, getTitle {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.91, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\mechs\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53722}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53722/devtoo..., se:cdpVersion: 124.0.6367.91, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 11d0fa9ff8cf2a37de538c3afc457ff7
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:305)
+	at com.demonopcommerce.stepdef.LoginStepDef.user_is_on_the_login_page(LoginStepDef.java:31)
+	at ✽.User is on the login page(file:///C:/Users/mechs/eclipse-workspace/nopcommerceDemo/src/test/java/feature/loginNopcommerce.feature:10)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.demonopcommerce.stepdef.LoginStepDef.user_enters_the_and(java.lang.String,java.lang.String)">
+                <span>When User enters the "admin@yourstore.com" and "admin"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.demonopcommerce.stepdef.LoginStepDef.user_clicks_login_button()">
+                <span>And User clicks login button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.demonopcommerce.stepdef.LoginStepDef.user_should_be_logged_in_successfully()">
+                <span>Then User should be logged in successfully</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step fail-bg" title="AFTER">
+                <span>com.demonopcommerce.stepdef.LoginStepDef.afterHooks()</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=124.0.6367.91)
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [11d0fa9ff8cf2a37de538c3afc457ff7, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.91, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\mechs\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53722}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53722/devtoo..., se:cdpVersion: 124.0.6367.91, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 11d0fa9ff8cf2a37de538c3afc457ff7
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:321)
+	at nopcommerce.baseClass.BaseClass.screenShot(BaseClass.java:96)
+	at com.demonopcommerce.stepdef.LoginStepDef.afterHooks(LoginStepDef.java:79)
+</textarea>
+      
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="10"><span class="badge log fail-bg mr-2">Fail</span>Unsuccessful Login with invalid credentials</div>
       </div>
     </div>
         <div class="scenario_outline ">
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="3"><span class="badge log fail-bg mr-2">Fail</span>Unsuccessful Login with invalid credentials</div>
+                  <div class="node" id="11"><span class="badge log fail-bg mr-2">Fail</span>Unsuccessful Login with invalid credentials</div>
                 </div>
               </div>
               <div class="card-body mt-3 ">
@@ -146,44 +243,15 @@
       <div>
       </div>
                   </div>
-                  <div class="step pass-bg">
+                  <div class="step fail-bg">
                     <span>Then User should see an error message "Login was unsuccessful. Please correct the errors and try again."</span>
       <div>
-      </div>
-                  </div>
-                  <div class="step fail-bg">
-                    <span>Then User should also see an error messegafoe empty feilds</span>
-      <div>
-        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#Email\-error"}
-  (Session info: chrome=124.0.6367.61)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.19.1', revision: 'abe0ee07dc'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f53bcb2e93e59aadd71e9fc3ca8d601d, findElement {using=id, value=Email-error}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.61, chrome: {chromedriverVersion: 124.0.6367.78 (a087f2dd364d..., userDataDir: C:\Users\mechs\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63432}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63432/devtoo..., se:cdpVersion: 124.0.6367.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f53bcb2e93e59aadd71e9fc3ca8d601d
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at jdk.proxy2/jdk.proxy2.$Proxy24.isDisplayed(Unknown Source)
-	at com.demonopcommerce.stepdef.LoginStepDef.user_should_also_see_an_error_messegafoe_empty_feilds(LoginStepDef.java:75)
-	at ✽.User should also see an error messegafoe empty feilds(file:///C:/Users/mechs/eclipse-workspace/nopcommerceDemo/src/test/java/feature/loginNopcommerce.feature:21)
+	at com.demonopcommerce.stepdef.LoginStepDef.user_should_see_an_error_message(LoginStepDef.java:72)
+	at ✽.User should see an error message "Login was unsuccessful. Please correct the errors and try again."(file:///C:/Users/mechs/eclipse-workspace/nopcommerceDemo/src/test/java/feature/loginNopcommerce.feature:20)
 </textarea>
       
       </div>
@@ -193,7 +261,7 @@ Session ID: f53bcb2e93e59aadd71e9fc3ca8d601d
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="11"><span class="badge log fail-bg mr-2">Fail</span>Unsuccessful Login with invalid credentials</div>
+                  <div class="node" id="18"><span class="badge log fail-bg mr-2">Fail</span>Unsuccessful Login with invalid credentials</div>
                 </div>
               </div>
               <div class="card-body mt-3 ">
@@ -212,112 +280,17 @@ Session ID: f53bcb2e93e59aadd71e9fc3ca8d601d
       <div>
       </div>
                   </div>
-                  <div class="step pass-bg">
+                  <div class="step fail-bg">
                     <span>Then User should see an error message "Login was unsuccessful. Please correct the errors and try again."</span>
       <div>
-      </div>
-                  </div>
-                  <div class="step fail-bg">
-                    <span>Then User should also see an error messegafoe empty feilds</span>
-      <div>
-        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#Email\-error"}
-  (Session info: chrome=124.0.6367.61)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.19.1', revision: 'abe0ee07dc'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f102498fc0495cd71016d57a952046b1, findElement {using=id, value=Email-error}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.61, chrome: {chromedriverVersion: 124.0.6367.78 (a087f2dd364d..., userDataDir: C:\Users\mechs\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63453}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63453/devtoo..., se:cdpVersion: 124.0.6367.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f102498fc0495cd71016d57a952046b1
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at jdk.proxy2/jdk.proxy2.$Proxy24.isDisplayed(Unknown Source)
-	at com.demonopcommerce.stepdef.LoginStepDef.user_should_also_see_an_error_messegafoe_empty_feilds(LoginStepDef.java:75)
-	at ✽.User should also see an error messegafoe empty feilds(file:///C:/Users/mechs/eclipse-workspace/nopcommerceDemo/src/test/java/feature/loginNopcommerce.feature:21)
+	at com.demonopcommerce.stepdef.LoginStepDef.user_should_see_an_error_message(LoginStepDef.java:72)
+	at ✽.User should see an error message "Login was unsuccessful. Please correct the errors and try again."(file:///C:/Users/mechs/eclipse-workspace/nopcommerceDemo/src/test/java/feature/loginNopcommerce.feature:20)
 </textarea>
       
-      </div>
-                  </div>
-              </div>
-            </div>
-            <div class="card-body l1">
-              <div class="card-header">
-                <div class="card-title outline-child">
-                  <div class="node" id="19"><span class="badge log fail-bg mr-2">Fail</span>Unsuccessful Login with invalid credentials</div>
-                </div>
-              </div>
-              <div class="card-body mt-3 ">
-                  <div class="step pass-bg">
-                    <span>Given User enters the "https://admin-demo.nopcommerce.com"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Given User enters invalid "" and "admin"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>When User clicks login button</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step fail-bg">
-                    <span>Then User should see an error message "Please enter your email"</span>
-      <div>
-        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='message-error validation-summary-errors']"}
-  (Session info: chrome=124.0.6367.61)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.19.1', revision: 'abe0ee07dc'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6ef9783fc533c1a06d506954395525ed, findElement {using=xpath, value=//div[@class='message-error validation-summary-errors']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.61, chrome: {chromedriverVersion: 124.0.6367.78 (a087f2dd364d..., userDataDir: C:\Users\mechs\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63476}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63476/devtoo..., se:cdpVersion: 124.0.6367.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6ef9783fc533c1a06d506954395525ed
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy24.isDisplayed(Unknown Source)
-	at com.demonopcommerce.stepdef.LoginStepDef.user_should_see_an_error_message(LoginStepDef.java:70)
-	at ✽.User should see an error message "Please enter your email"(file:///C:/Users/mechs/eclipse-workspace/nopcommerceDemo/src/test/java/feature/loginNopcommerce.feature:20)
-</textarea>
-      
-      </div>
-                  </div>
-                  <div class="step skip-bg">
-                    <span>Then User should also see an error messegafoe empty feilds</span>
-      <div>Step skipped
       </div>
                   </div>
               </div>
@@ -340,22 +313,22 @@ Session ID: 6ef9783fc533c1a06d506954395525ed
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>3</span>
+<span class='badge log badge-danger'>2</span>
 </span>
-<p class="name">org.openqa.selenium.NoSuchElementException</p>
-<p class="duration text-sm">3 tests</p>
+<p class="name">org.openqa.selenium.NoSuchWindowException</p>
+<p class="duration text-sm">2 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>org.openqa.selenium.NoSuchElementException</h4>
-<span status="fail" class='badge log badge-danger'>3 failed</span>
+<h4>org.openqa.selenium.NoSuchWindowException</h4>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -368,31 +341,67 @@ Session ID: 6ef9783fc533c1a06d506954395525ed
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>10:34:10 am</td>
+<td>11:19:05 am</td>
 <td>
-<a href="#" class="linked" test-id='1' id='9'>Then User should also see an error messegafoe empty feilds</a>
+<a href="#" class="linked" test-id='1' id='5'>Given User is on the login page</a>
 <div class="">
-<span class="badge badge-default">Nopcommerce login feature.Unsuccessful Login with invalid credentials.Then User should also see an error messegafoe empty feilds</span>
+<span class="badge badge-default">Nopcommerce login feature.Successful Login with the valid credentials.Given User is on the login page</span>
 </div>
 </td>
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>10:34:16 am</td>
+<td>11:19:05 am</td>
 <td>
-<a href="#" class="linked" test-id='1' id='17'>Then User should also see an error messegafoe empty feilds</a>
+<a href="#" class="linked" test-id='1' id='9'>com.demonopcommerce.stepdef.LoginStepDef.afterHooks()</a>
 <div class="">
-<span class="badge badge-default">Nopcommerce login feature.Unsuccessful Login with invalid credentials.Then User should also see an error messegafoe empty feilds</span>
+<span class="badge badge-default">Nopcommerce login feature.Successful Login with the valid credentials.com.demonopcommerce.stepdef.LoginStepDef.afterHooks()</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">java.lang.NullPointerException</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.NullPointerException</h4>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:19:08 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='16'>Then User should see an error message "Login was unsuccessful. Please correct the errors and try again."</a>
+<div class="">
+<span class="badge badge-default">Nopcommerce login feature.Unsuccessful Login with invalid credentials.Then User should see an error message "Login was unsuccessful. Please correct the errors and try again."</span>
 </div>
 </td>
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>10:34:21 am</td>
+<td>11:19:11 am</td>
 <td>
-<a href="#" class="linked" test-id='1' id='24'>Then User should see an error message "Please enter your email"</a>
+<a href="#" class="linked" test-id='1' id='23'>Then User should see an error message "Login was unsuccessful. Please correct the errors and try again."</a>
 <div class="">
-<span class="badge badge-default">Nopcommerce login feature.Unsuccessful Login with invalid credentials.Then User should see an error message "Please enter your email"</span>
+<span class="badge badge-default">Nopcommerce login feature.Unsuccessful Login with invalid credentials.Then User should see an error message "Login was unsuccessful. Please correct the errors and try again."</span>
 </div>
 </td>
 </tr>
@@ -412,22 +421,22 @@ Session ID: 6ef9783fc533c1a06d506954395525ed
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>3</span>
+<span class='badge log badge-danger'>2</span>
 </span>
 <p class="name">@Invalid</p>
-<p class="duration text-sm">3 tests</p>
+<p class="duration text-sm">2 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
 <h4>@Invalid</h4>
-<span status="fail" class='badge log badge-danger'>3 failed</span>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -440,17 +449,7 @@ Session ID: 6ef9783fc533c1a06d506954395525ed
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>10:34:04 am</td>
-<td>
-<a href="#" class="linked" test-id='1' id='3'>Unsuccessful Login with invalid credentials</a>
-<div class="">
-<span class="badge badge-default">Nopcommerce login feature.Unsuccessful Login with invalid credentials</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>10:34:10 am</td>
+<td>11:19:05 am</td>
 <td>
 <a href="#" class="linked" test-id='1' id='11'>Unsuccessful Login with invalid credentials</a>
 <div class="">
@@ -460,11 +459,47 @@ Session ID: 6ef9783fc533c1a06d506954395525ed
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>10:34:16 am</td>
+<td>11:19:08 am</td>
 <td>
-<a href="#" class="linked" test-id='1' id='19'>Unsuccessful Login with invalid credentials</a>
+<a href="#" class="linked" test-id='1' id='18'>Unsuccessful Login with invalid credentials</a>
 <div class="">
 <span class="badge badge-default">Nopcommerce login feature.Unsuccessful Login with invalid credentials</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@Valid</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Valid</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:18:43 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Successful Login with the valid credentials</a>
+<div class="">
+<span class="badge badge-default">Nopcommerce login feature.Successful Login with the valid credentials</span>
 </div>
 </td>
 </tr>
@@ -485,13 +520,13 @@ Session ID: 6ef9783fc533c1a06d506954395525ed
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Apr 25, 2024 10:34:03 am</h3>
+<h3>Apr 29, 2024 11:18:42 am</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Apr 25, 2024 10:34:21 am</h3>
+<h3>Apr 29, 2024 11:19:11 am</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -562,10 +597,10 @@ Session ID: 6ef9783fc533c1a06d506954395525ed
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='73%'><b>11</b> steps passed</small></div>
+<div><small data-tooltip='50%'><b>7</b> steps passed</small></div>
 <div>
-<small data-tooltip='20%'><b>3</b> steps failed,
-<b>1</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='28%'><b>4</b> steps failed,
+<b>3</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -581,7 +616,7 @@ Session ID: 6ef9783fc533c1a06d506954395525ed
 </div></div>
 <script>
 var timeline = {
-"Nopcommerce login feature":16.858
+"Nopcommerce login feature":28.015
 };
 </script>
 <div class="row">
@@ -593,7 +628,15 @@ var timeline = {
 <tr>
 <td>@Invalid</td>
 <td>0</td>
-<td>3</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@Valid</td>
+<td>0</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0%</td>
@@ -618,10 +661,10 @@ warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 11,
-failGrandChild: 3,
+passGrandChild: 7,
+failGrandChild: 4,
 warningGrandChild: 0,
-skipGrandChild: 1,
+skipGrandChild: 3,
 infoGrandChild: 0,
 eventsCount: 5,
 };

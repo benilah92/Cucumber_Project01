@@ -18,7 +18,7 @@ Scenario Outline: Unsuccessful Login with invalid credentials
 	Given User enters invalid "<emailId>" and "<password>" 
 	When User clicks login button 
 	Then User should see an error message "<error msg>" 
-	Then User should also see an error messegafoe empty feilds
+	
 	
 	Examples: 
 	

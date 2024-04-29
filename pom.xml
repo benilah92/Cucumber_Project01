@@ -6,6 +6,7 @@
 	<groupId>com.project</groupId>
 	<artifactId>nopcommerceDemo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	
 	<packaging>jar</packaging>
 
 	<name>nopcommerceDemo</name>
@@ -64,6 +65,7 @@
 			<groupId>com.project</groupId>
 			<artifactId>nopcommerce</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
+			
 		</dependency>
 		<dependency>
     <groupId>io.rest-assured</groupId>
@@ -72,5 +74,10 @@
     <scope>test</scope>
 </dependency>
 
+		<dependency>
+			<groupId>com.project</groupId>
+			<artifactId>cucumber</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 </project>
